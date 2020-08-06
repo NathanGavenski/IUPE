@@ -28,4 +28,20 @@ After downloading the expert demonstration, you can then train ABCO. There are s
 ## Citation
 
 ```
+@inproceedings{GavenskiEtAl2020bmvc,
+  author    = {Gavenski, Nathan and
+               Monteiro, Juarez and 
+               Granada, Roger and 
+               Meneguzzi, Felipe and 
+               Barros, Rodrigo C},
+  title     = {Imitating Unknown Policies via Exploration},
+  booktitle = {Proceedings of the 31st British Machine Vision Conference},
+  series    = {BMVC 2020},
+  location  = {Manchester, UK},
+  pages     = {1--8},
+  url       = {},
+  month     = {September},
+  year      = {2020},
+  publisher = {BMVA Press}
+}
 ```
