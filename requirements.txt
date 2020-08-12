@@ -1,0 +1,11 @@
+git+git://github.com/openai/gym  # For the standard Gym environments
+git+git://github.com/MattChanTK/gym-maze  # For the Gym Maze environemnt
+numpy===1.19.1
+pandas
+Pillow==2.2.2
+progress===1.5
+scikit-learn===0.23.1
+tensorboard-wrapper===0.1.1
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch>=1.6.0
+torchvision>=0.7.0
