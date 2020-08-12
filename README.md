@@ -11,7 +11,7 @@ We address these limitations incorporating a two-phase model into the original f
 Imitating Unknown Policies via Exploration (IUPE) combines both an *Inverse Dynamics Model* (IDM) to infer actions in a self-supervised fashion, and a *Policy Model* (PM), which is a function that tells the agent what to do in each possible state of the environment. IUPE further augments the Behavioral Cloning from Observations framework with two strategies for avoiding local minima, sampling and exploration, and with self-attention modules for improving the learning of global features and, hence, generalization.
 
 <p align="center">
-  <img src="https://github.com/NathanGavenski/IUPE/blob/code/images/iupe_flow.svg" width="75%" />
+  <img src="https://github.com/NathanGavenski/IUPE/blob/code/images/iupe_flow_diagram.svg" width="75%" />
 </p>
 
 <br><br>
