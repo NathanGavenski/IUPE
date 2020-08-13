@@ -11,7 +11,7 @@ We address these limitations incorporating a two-phase model into the original f
 Imitating Unknown Policies via Exploration (IUPE) combines both an *Inverse Dynamics Model* (IDM) to infer actions in a self-supervised fashion, and a *Policy Model* (PM), which is a function that tells the agent what to do in each possible state of the environment. IUPE further augments the Behavioral Cloning from Observations framework with two strategies for avoiding local minima, sampling and exploration, and with self-attention modules for improving the learning of global features and, hence, generalization.
 
 <p align="center">
-  <img src="https://github.com/NathanGavenski/IUPE/blob/code/images/iupe_flow_diagram.svg" width="75%" />
+  <img src="https://github.com/NathanGavenski/IUPE/blob/master/images/iupe_flow_diagram.svg" width="75%" />
 </p>
 
 <br><br>
@@ -31,6 +31,19 @@ After downloading the expert demonstration, you can then train ABCO. There are s
 ./scripts/iupe_mountaincar  # Mountaincar
 ```
 **We ran IUPE on a server, if you are running locally you might want to remove** ```xvfb-run -a -s "-screen 0 1400x900x24"``` **from the scripts**
+
+## Results
+Performance and Average Episode Reward for our approach and related work:
+
+| Models | Metrics | <a href="https://gym.openai.com/envs/CartPole-v0/">CartPole</a> | <a href="https://gym.openai.com/envs/Acrobot-v1/">Acrobot</a> | <a href="https://gym.openai.com/envs/MountainCar-v0/">MountainCar</a> | <a href="https://github.com/MattChanTK/gym-maze">Maze 3x3</a> | <a href="https://github.com/MattChanTK/gym-maze">Maze 5x5</a> | <a href="https://github.com/MattChanTK/gym-maze">Maze 10x10</a> |
+| :-----: | :------------------------------------------: | :------------------------------------------------------: | :------------------------------------------------------: | :------------------------------------------------------: | :------------------------------------------------------: | :------------------------------------------------------: | :------------------------------------------------------: |
+| <b>Expert</b> | <i>P</i><br> <i>AER</i> | 1.000<br>442.628 | 1.000<br>-110.109 | 1.000<br>-147.265 | 1.000<br>0.963 | 1.000<br>0.970 | 1.000<br>0.981 |
+| <b>Random</b> | <i>P</i><br> <i>AER</i> | 0.000<br>18.700 | 0.000<br>-482.600 | 0.000<br>-200.000 | 0.000<br>0.557 | 0.000<br>0.166 | 0.000<br>-0.415 | 
+| <b>BC</b> | <i>P</i><br> <i>AER</i> | 1.135<br>500.000 | 1.071<br>-83.590 | 1.560<br>-117.720 | -1.207<br>0.180 | -0.921<br>-0.507 | -0.470<br>-1.000 | 
+| <b>BCO</b> | <i>P</i><br> <i>AER</i> | <b>1.135</b><br><b>500.000</b> | 0.980<br>-117.600 | 0.948<br>-150.000 | 0.883<br><b>0.927</b> | -0.112<br>0.104 | -0.416<br>-0.941 | 
+| <b>ILPO</b> | <i>P</i><br> <i>AER</i> | <b>1.135</b><br><b>500.000</b> | 1.067<br>-85.300 | 0.626<br>-167.000 | -1.711<br>-0.026 | -0.398<br>-0.059 | 0.257<br>-0.020 | 
+  | <b>IUPE</b> | <i>P</i><br> <i>AER</i> | <b>1.135</b><br><b>500.000</b> | <b>1.086</b><br><b>-78.100</b> | <b>1.314</b><br><b>-130.700</b> | <b>1.361</b><br><b>0.927</b> | <b>1.000</b><br><b>0.971</b> | <b>1.000</b><br><b>0.981</b> | 
+
 
 ## Citation
 ```
