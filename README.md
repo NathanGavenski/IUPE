@@ -1,5 +1,5 @@
-# [Imitating Unknown Policies via Exploration (IUPE)](https://arxiv.org/pdf/2008.05660.pdf)
-Official Pytorch implementation of Imitating Unknown Policies via Exploration
+# Imitating Unknown Policies via Exploration (IUPE)
+Official Pytorch implementation of [Imitating Unknown Policies via Exploration](https://arxiv.org/pdf/2008.05660.pdf)
 
 ---
 
