@@ -64,7 +64,3 @@ Performance and Average Episode Reward for our approach and related work:
   publisher = {BMVA Press}
 }
 ```
-
-## Previous Work
-[Augmented Behavioral Cloning from Observation](https://arxiv.org/abs/2004.13529)
-<br>[Code Repository](https://github.com/NathanGavenski/ABCO)
