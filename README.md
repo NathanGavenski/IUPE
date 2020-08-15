@@ -21,7 +21,7 @@ You can download the data we used to train our models [here](https://drive.googl
 
 ## Training IUPE
 
-After downloading the expert demonstration, you can then train ABCO. There are several training scripts in the directory. 
+After downloading the expert demonstration, you can then train IUPE. There are several training scripts in the directory. 
 ```
 ./scripts/iupe_3  # Maze 3x3
 ./scripts/iupe_5  # Maze 5x5
